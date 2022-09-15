@@ -5,6 +5,7 @@ import java.util.stream.IntStream;
 
 public class Balls {
 
+    private static final int ZERO = 0;
     private static final int ONE = 1;
 
     private final List<Ball> balls;
@@ -20,6 +21,10 @@ public class Balls {
                 .map(ballIndex -> new Ball(BallIndex.from(ballIndex), BallNumber.from(numbers.get(ballIndex - ONE))))
                 .toList();
         return new Balls(balls);
+    }
+
+    public Ball firstBall() {
+        return balls.get(ZERO);
     }
 
 }

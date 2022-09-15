@@ -7,6 +7,7 @@ public class Balls {
 
     private static final int ZERO = 0;
     private static final int ONE = 1;
+    private static final int TWO = 2;
 
     private final List<Ball> balls;
 
@@ -29,6 +30,10 @@ public class Balls {
 
     public Ball secondBall() {
         return balls.get(ONE);
+    }
+
+    public Ball thirdBall() {
+        return balls.get(TWO);
     }
 
 }

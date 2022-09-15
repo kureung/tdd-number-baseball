@@ -15,7 +15,7 @@ public interface NumbersGenerator {
 
         @Override
         public List<Integer> numbers() {
-            return RANDOM.ints(BallNumber.ONE.number(), BallNumber.NINE.number() + BallNumber.ONE.number())
+            return RANDOM.ints(BallNumber.ONE.numberValue(), BallNumber.NINE.numberValue() + BallNumber.ONE.numberValue())
                     .distinct()
                     .limit(NUMBER_OF_BALLS)
                     .boxed()

@@ -13,20 +13,20 @@ public enum BallNumber {
     EIGHT(8),
     NINE(9);
 
-    private final int number;
+    private final int numberValue;
 
-    BallNumber(int number) {
-        this.number = number;
+    BallNumber(int numberValue) {
+        this.numberValue = numberValue;
     }
 
     public static BallNumber from(int numberValue) {
         return Arrays.stream(values())
-                .filter(ballNumber -> ballNumber.number == numberValue)
+                .filter(ballNumber -> ballNumber.numberValue == numberValue)
                 .findAny()
                 .orElseThrow(() -> new IllegalArgumentException("공의_숫자는 1 이상 9이하이어야 합니다."));
     }
 
-    public int number() {
-        return number;
+    public int numberValue() {
+        return numberValue;
     }
 }

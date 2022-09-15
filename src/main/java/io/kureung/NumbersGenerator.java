@@ -24,4 +24,19 @@ public interface NumbersGenerator {
 
     }
 
+    class FakeNumbersGenerator implements NumbersGenerator {
+
+        private final List<Integer> numbers;
+
+        public FakeNumbersGenerator(List<Integer> numbers) {
+            this.numbers = numbers;
+        }
+
+        @Override
+        public List<Integer> numbers() {
+            return numbers;
+        }
+
+    }
+
 }

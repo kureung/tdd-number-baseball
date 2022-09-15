@@ -31,4 +31,11 @@ class BallsTest {
         assertThat(balls.secondBall()).isEqualTo(new Ball(BallIndex.TWO, BallNumber.TWO));
     }
 
+    @Test
+    void 세_번째_볼을_반환한다() {
+        NumbersGenerator numbersGenerator = new FakeNumbersGenerator(List.of(1, 2, 3));
+        Balls balls = Balls.from(numbersGenerator);
+        assertThat(balls.thirdBall()).isEqualTo(new Ball(BallIndex.THREE, BallNumber.THREE));
+    }
+
 }

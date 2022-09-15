@@ -27,4 +27,8 @@ public class Balls {
         return balls.get(ZERO);
     }
 
+    public Ball secondBall() {
+        return balls.get(ONE);
+    }
+
 }

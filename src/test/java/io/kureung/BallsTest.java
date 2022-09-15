@@ -1,5 +1,6 @@
 package io.kureung;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;
 
 import io.kureung.NumbersGenerator.FakeNumbersGenerator;
@@ -21,6 +22,13 @@ class BallsTest {
         NumbersGenerator numbersGenerator = new FakeNumbersGenerator(List.of(1, 2, 3));
         Balls balls = Balls.from(numbersGenerator);
         assertThat(balls.firstBall()).isEqualTo(new Ball(BallIndex.ONE, BallNumber.ONE));
+    }
+
+    @Test
+    void 두_번째_볼을_반환한다() {
+        NumbersGenerator numbersGenerator = new FakeNumbersGenerator(List.of(1, 2, 3));
+        Balls balls = Balls.from(numbersGenerator);
+        assertThat(balls.secondBall()).isEqualTo(new Ball(BallIndex.TWO, BallNumber.TWO));
     }
 
 }

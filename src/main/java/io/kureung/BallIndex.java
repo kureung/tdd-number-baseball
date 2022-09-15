@@ -19,4 +19,8 @@ public enum BallIndex {
                 .findAny()
                 .orElseThrow(() -> new IllegalArgumentException("공 인덱스는 1 이상 3 이하 입니다."));
     }
+
+    public int indexValue() {
+        return indexValue;
+    }
 }

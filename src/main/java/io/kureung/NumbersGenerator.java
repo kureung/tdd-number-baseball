@@ -13,13 +13,9 @@ public interface NumbersGenerator {
 
         private static final Random RANDOM = new Random();
 
-        private static final int SMALLEST_NUMBER_OF_BALL = 1;
-
-        private static final int BIGGEST_NUMBER_OF_BALL = 9;
-
         @Override
         public List<Integer> numbers() {
-            return RANDOM.ints(SMALLEST_NUMBER_OF_BALL, BIGGEST_NUMBER_OF_BALL + SMALLEST_NUMBER_OF_BALL)
+            return RANDOM.ints(BallNumber.ONE.number(), BallNumber.NINE.number() + BallNumber.ONE.number())
                     .distinct()
                     .limit(NUMBER_OF_BALLS)
                     .boxed()

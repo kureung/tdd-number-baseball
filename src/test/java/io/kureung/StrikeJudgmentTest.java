@@ -13,12 +13,12 @@ class StrikeJudgmentTest {
 
     @MethodSource
     @ParameterizedTest
-    void 스트라이크_판단(NumbersGenerator computerNumber, NumbersGenerator userNumber, BallResult expectedResult) {
+    void 스트라이크_판단(NumbersGenerator computerNumber, NumbersGenerator userNumber, StrikeJudgment expectedResult) {
         Balls computerBalls = Balls.from(computerNumber);
         Balls userBalls = Balls.from(userNumber);
 
-        StrikeJudgement strikeJudgement = new StrikeJudgement(computerBalls, userBalls);
-        StrikeResult strikeResult = strikeJudgement.judgmentResult();
+        StrikeJudgment strikeJudgment = new StrikeJudgment(computerBalls, userBalls);
+        StrikeResult strikeResult = strikeJudgment.judgmentResult();
         assertThat(strikeResult).isEqualTo(expectedResult);
     }
 

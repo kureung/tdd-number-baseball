@@ -17,11 +17,14 @@ public class Balls {
 
     public static Balls from(NumbersGenerator numbersGenerator) {
         List<Integer> numbers = numbersGenerator.numbers();
-        List<Ball> balls = IntStream.rangeClosed(BallIndex.ONE.indexValue(), BallIndex.THREE.indexValue())
+        return new Balls(balls(numbers));
+    }
+
+    private static List<Ball> balls(List<Integer> numbers) {
+        return IntStream.rangeClosed(BallIndex.ONE.indexValue(), BallIndex.THREE.indexValue())
                 .boxed()
                 .map(ballIndex -> new Ball(BallIndex.from(ballIndex), BallNumber.from(numbers.get(ballIndex - BALLS_INDEX_ONE))))
                 .toList();
-        return new Balls(balls);
     }
 
     public Ball firstBall() {

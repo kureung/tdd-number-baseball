@@ -17,12 +17,12 @@ public class Ball {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Ball ball = (Ball) o;
-        return ballIndex == ball.ballIndex && ballNumber == ball.ballNumber;
+        return ballNumber == ball.ballNumber;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ballIndex, ballNumber);
+        return Objects.hash(ballNumber);
     }
 
 }

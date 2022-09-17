@@ -27,4 +27,8 @@ public class BallResult {
         return Objects.hash(ball);
     }
 
+    public BallResult addedBall(BallResult twoBall) {
+        return new BallResult(this.ball + twoBall.ball);
+    }
+
 }

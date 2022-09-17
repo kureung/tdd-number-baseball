@@ -1,5 +1,7 @@
 package io.kureung;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import io.kureung.NumbersGenerator.FakeNumbersGenerator;
 import java.util.List;
 import java.util.stream.Stream;
@@ -17,7 +19,7 @@ class BallJudgementTest {
 
         BallJudgement ballJudgement = new BallJudgement(computerBalls, userBalls);
         BallResult ballResult = ballJudgement.judgmentResult();
-        assertThat(ballResult).isEqualTo(expectedResult);
+        assertThat(ballResult.ball()).isEqualTo(expectedResult.ball());
     }
 
     private static Stream<Arguments> 볼_판단() {

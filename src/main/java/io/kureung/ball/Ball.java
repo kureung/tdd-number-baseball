@@ -25,4 +25,8 @@ public class Ball {
         return Objects.hash(ballNumber);
     }
 
+    public boolean isSameNumber(Ball anotherBall) {
+        return this.ballNumber == anotherBall.ballNumber;
+    }
+
 }

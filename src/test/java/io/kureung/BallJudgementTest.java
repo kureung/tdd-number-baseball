@@ -19,7 +19,7 @@ class BallJudgementTest {
 
         BallJudgement ballJudgement = new BallJudgement(computerBalls, userBalls);
         BallResult ballResult = ballJudgement.judgmentResult();
-        assertThat(ballResult.ball()).isEqualTo(expectedResult.ball());
+        assertThat(ballResult).isEqualTo(expectedResult);
     }
 
     private static Stream<Arguments> 볼_판단() {

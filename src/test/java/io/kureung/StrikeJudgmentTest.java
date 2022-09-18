@@ -13,7 +13,7 @@ class StrikeJudgmentTest {
 
     @MethodSource
     @ParameterizedTest
-    void 스트라이크_판단(NumbersGenerator computerNumber, NumbersGenerator userNumber, StrikeJudgment expectedResult) {
+    void 스트라이크_판단(NumbersGenerator computerNumber, NumbersGenerator userNumber, StrikeResult expectedResult) {
         Balls computerBalls = Balls.from(computerNumber);
         Balls userBalls = Balls.from(userNumber);
 
@@ -25,9 +25,9 @@ class StrikeJudgmentTest {
     private static Stream<Arguments> 스트라이크_판단() {
         return Stream.of(
                 Arguments.of(numbers(List.of(1, 2, 3)), numbers(List.of(4, 5, 6)), new StrikeResult(0)),
-                Arguments.of(numbers(List.of(1, 2, 3)), numbers(List.of(2, 4, 5)), new StrikeResult(1)),
-                Arguments.of(numbers(List.of(1, 2, 3)), numbers(List.of(2, 3, 4)), new StrikeResult(2)),
-                Arguments.of(numbers(List.of(1, 2, 3)), numbers(List.of(2, 3, 1)), new StrikeResult(3))
+                Arguments.of(numbers(List.of(1, 2, 3)), numbers(List.of(1, 3, 2)), new StrikeResult(1)),
+                Arguments.of(numbers(List.of(1, 2, 3)), numbers(List.of(1, 2, 4)), new StrikeResult(2)),
+                Arguments.of(numbers(List.of(1, 2, 3)), numbers(List.of(1, 2, 3)), new StrikeResult(3))
         );
     }
 

@@ -32,7 +32,7 @@ public class BallJudgement {
     }
 
     private BallResult comparedBallResult(Ball standardTarget, Ball... comparisonTargets) {
-        return Arrays.asList(comparisonTargets).contains(standardTarget)
+        return Arrays.stream(comparisonTargets).anyMatch(comparisonTarget -> comparisonTarget.isSameNumber(standardTarget))
                 ? new BallResult(1)
                 : new BallResult(0);
     }

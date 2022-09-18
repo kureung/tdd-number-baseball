@@ -1,4 +1,7 @@
-package io.kureung;
+package io.kureung.judgment;
+
+import io.kureung.judgment.ball.BallResult;
+import io.kureung.judgment.strike.StrikeResult;
 
 public class JudgmentResult {
 

@@ -1,5 +1,7 @@
-package io.kureung;
+package io.kureung.judgment.ball;
 
+import io.kureung.Ball;
+import io.kureung.Balls;
 import java.util.Arrays;
 
 public class BallJudgement {

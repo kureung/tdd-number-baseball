@@ -1,9 +1,14 @@
-package io.kureung;
+package io.kureung.judgment;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
 
+import io.kureung.Balls;
+import io.kureung.ComputerPlayer;
+import io.kureung.NumbersGenerator;
 import io.kureung.NumbersGenerator.FakeNumbersGenerator;
+import io.kureung.Player;
+import io.kureung.UserPlayer;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 

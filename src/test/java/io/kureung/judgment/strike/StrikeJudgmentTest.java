@@ -1,7 +1,9 @@
-package io.kureung;
+package io.kureung.judgment.strike;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import io.kureung.Balls;
+import io.kureung.NumbersGenerator;
 import io.kureung.NumbersGenerator.FakeNumbersGenerator;
 import java.util.List;
 import java.util.stream.Stream;

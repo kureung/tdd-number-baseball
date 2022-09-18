@@ -11,7 +11,7 @@ class ComputerPlayerTest {
     void 컴퓨터_플레이어는_공들을_반환할_수_있다() {
         Balls balls = balls();
         Player player = new ComputerPlayer(balls);
-        Assertions.assertThat(player.balls()).isEqulato(balls);
+        Assertions.assertThat(player.balls()).isEqualTo(balls);
     }
 
     private Balls balls() {

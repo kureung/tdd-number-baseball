@@ -1,4 +1,4 @@
-package io.kureung;
+package io.kureung.ball;
 
 import java.util.Arrays;
 

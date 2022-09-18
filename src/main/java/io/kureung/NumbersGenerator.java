@@ -1,5 +1,6 @@
 package io.kureung;
 
+import io.kureung.ball.BallNumber;
 import java.util.List;
 import java.util.Random;
 

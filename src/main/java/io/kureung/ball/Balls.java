@@ -1,5 +1,6 @@
-package io.kureung;
+package io.kureung.ball;
 
+import io.kureung.NumbersGenerator;
 import java.util.List;
 import java.util.stream.IntStream;
 

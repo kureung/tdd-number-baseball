@@ -1,8 +1,9 @@
-package io.kureung;
+package io.kureung.ball;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;
 
+import io.kureung.NumbersGenerator;
 import io.kureung.NumbersGenerator.FakeNumbersGenerator;
 import io.kureung.NumbersGenerator.RandomNumbersGenerator;
 import java.util.List;

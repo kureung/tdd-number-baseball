@@ -1,6 +1,7 @@
 package io.kureung;
 
 import io.kureung.NumbersGenerator.FakeNumbersGenerator;
+import io.kureung.ball.Balls;
 import java.util.List;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

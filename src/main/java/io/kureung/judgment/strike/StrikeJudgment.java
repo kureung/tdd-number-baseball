@@ -1,7 +1,7 @@
 package io.kureung.judgment.strike;
 
-import io.kureung.Ball;
-import io.kureung.Balls;
+import io.kureung.ball.Ball;
+import io.kureung.ball.Balls;
 
 public class StrikeJudgment {
 

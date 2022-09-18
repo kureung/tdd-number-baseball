@@ -1,4 +1,4 @@
-package io.kureung;
+package io.kureung.ball;
 
 import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;

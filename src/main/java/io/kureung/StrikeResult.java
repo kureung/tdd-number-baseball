@@ -27,4 +27,8 @@ public class StrikeResult {
         return Objects.hash(strike);
     }
 
+    public int strike() {
+        return strike;
+    }
+
 }

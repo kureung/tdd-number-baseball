@@ -1,17 +1,18 @@
-package io.kureung;
+package io.kureung.player;
 
+import io.kureung.NumbersGenerator;
 import io.kureung.NumbersGenerator.FakeNumbersGenerator;
 import io.kureung.ball.Balls;
 import java.util.List;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class ComputerPlayerTest {
+class UserPlayerTest {
 
     @Test
-    void 컴퓨터_플레이어는_공들을_반환할_수_있다() {
+    void 유저_플레이어는_공들을_반환할_수_있다() {
         Balls balls = balls();
-        Player player = new ComputerPlayer(balls);
+        Player player = new UserPlayer(balls);
         Assertions.assertThat(player.balls()).isEqualTo(balls);
     }
 

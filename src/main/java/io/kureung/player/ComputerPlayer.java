@@ -1,4 +1,4 @@
-package io.kureung;
+package io.kureung.player;
 
 import io.kureung.ball.Balls;
 

@@ -1,10 +1,10 @@
 package io.kureung.judgment;
 
-import io.kureung.Player;
 import io.kureung.judgment.ball.BallJudgement;
 import io.kureung.judgment.ball.BallResult;
 import io.kureung.judgment.strike.StrikeJudgment;
 import io.kureung.judgment.strike.StrikeResult;
+import io.kureung.player.Player;
 
 public class Judgment {
 
